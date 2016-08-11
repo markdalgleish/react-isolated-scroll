@@ -6,13 +6,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import times from 'lodash.times';
 
-const containerStyles = {
-  border: '1px solid #888',
-  width: '400px',
-  height: '200px',
-  overflow: 'auto'
-};
-
 const List = () => (
   <ul>
     { times(80, i => <li key={i}>List item.</li>) }
@@ -25,13 +18,13 @@ const App = () => (
 
     <p>With react-isolated-scroll:</p>
 
-    <IsolatedScroll style={containerStyles}>
+    <IsolatedScroll className="container">
       <List />
     </IsolatedScroll>
 
     <p>Without react-isolated-scroll:</p>
 
-    <div style={containerStyles}>
+    <div className="container">
       <List />
     </div>
   </div>
