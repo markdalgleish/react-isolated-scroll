@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes, cloneElement, Children } from 'react';
 import isolatedScroll from 'isolated-scroll';
 
 const unbindHandlersKey = '__unbind_handlers__';
@@ -6,10 +6,7 @@ const unbindHandlersKey = '__unbind_handlers__';
 export default class IsolatedScroll extends Component {
 
   static propTypes = {
-    children: PropTypes.oneOfType([
-      PropTypes.arrayOf(PropTypes.node),
-      PropTypes.node
-    ])
+    children: PropTypes.node
   };
 
   constructor() {
@@ -35,11 +32,9 @@ export default class IsolatedScroll extends Component {
   render() {
     const { children } = this.props;
 
-    return (
-      <div ref={this.storeComponentReference} {...this.props}>
-        { children }
-      </div>
-    );
+    return cloneElement(Children.only(children), {
+      ref: this.storeComponentReference
+    });
   }
 
 }

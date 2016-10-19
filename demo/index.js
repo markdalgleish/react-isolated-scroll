@@ -18,8 +18,10 @@ const App = () => (
 
     <p>With react-isolated-scroll:</p>
 
-    <IsolatedScroll className="container">
-      <List />
+    <IsolatedScroll>
+      <div className="container">
+        <List />
+      </div>
     </IsolatedScroll>
 
     <p>Without react-isolated-scroll:</p>
