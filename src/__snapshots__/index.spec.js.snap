@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IsolatedScroll should pass through attributes 1`] = `
+<div
+  data-example-attribute="exampleValue"
+/>
+`;
+
+exports[`IsolatedScroll should pass through children 1`] = `
+<div>
+  exampleChildTextNode
+</div>
+`;
+
+exports[`IsolatedScroll should pass through children 2`] = `
+<div
+  data-example-attribute="exampleValue"
+/>
+`;
+
+exports[`IsolatedScroll should render 1`] = `<div />`;
+
+exports[`IsolatedScroll should render correctly 1`] = `<div />`;
