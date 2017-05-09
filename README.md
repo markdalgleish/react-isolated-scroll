@@ -19,7 +19,6 @@ import IsolatedScroll from 'react-isolated-scroll';
 ## Todo
 
 - Add demo.
-- Add tests.
 
 ## License
 
