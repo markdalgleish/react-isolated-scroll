@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "webpack-dev-server --config demo/webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "rm -rf lib/ && babel -d lib/ src/",
     "prepublish": "npm run build"
   },

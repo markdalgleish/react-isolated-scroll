@@ -12,12 +12,4 @@ exports[`IsolatedScroll should pass through children 1`] = `
 </div>
 `;
 
-exports[`IsolatedScroll should pass through children 2`] = `
-<div
-  data-example-attribute="exampleValue"
-/>
-`;
-
 exports[`IsolatedScroll should render 1`] = `<div />`;
-
-exports[`IsolatedScroll should render correctly 1`] = `<div />`;
